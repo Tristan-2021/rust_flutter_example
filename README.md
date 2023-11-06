@@ -32,9 +32,10 @@ Luego nos vamos otra vez a a la carpeta native  y corremos este comando  :
 > cargo lipo
 
 Lo que hara este comando es instalar las arquitecturas para correr en nuestros dipositovs IOS, ahora necesitamos copiar la arquitectura dentro de la carpeta nativa 
-con este comando  : 
+con este comando  : este es el nombre del proyecto: "libflutterrustexample"
 
-> cp target/universal/debug/librustflutter.a ../ios/Runner
+
+> cp target/universal/debug/libflutterrustexample.a ../ios/Runner
 
 Otra vez necesitamos correr los encabezados  : 
 
