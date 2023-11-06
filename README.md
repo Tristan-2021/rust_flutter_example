@@ -1,6 +1,6 @@
 # flutter_rust_example
 
-A new Flutter project.
+Calling Rust Code from Flutter: A Guide to FFI Integration
 
 ## Getting Started
 
