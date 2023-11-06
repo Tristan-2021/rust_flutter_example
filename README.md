@@ -18,24 +18,24 @@ Una vez allí  necesitar usar este comandos :
 
 > cargo build
 
-Ahora necesitamos generar los puentes: 
+Ahora necesitamos generar los puentes : 
 
 > flutter_rust_bridge_codegen -r src/api.rs -d ../lib/bridge_generated.dart --dart-decl-output ../lib/bridge_definitions.dart
 
-Corremos est comando desde la carpeta raiz
+Corremos est comando desde la carpeta raiz : 
 
 > cargo install cargo-lipo
 
-Luego nos vamos otra vez a a la carpeta native  y corremos este comando
+Luego nos vamos otra vez a a la carpeta native  y corremos este comando  : 
 
 > cargo lipo
 
 Lo que hara este comando es instalar las arquitecturas para correr en nuestros dipositovs IOS, ahora necesitamos copiar la arquitectura dentro de la carpeta nativa 
-con este comando 
+con este comando  : 
 
 > cp target/universal/debug/librustflutter.a ../ios/Runner
 
-Otra vez necesitamos correr los encabezados
+Otra vez necesitamos correr los encabezados  : 
 
 > flutter_rust_bridge_codegen -r native/src/api.rs -d lib/bridge_generated.dart --dart-decl-output lib/bridge_definitions.dart -c ios/Runner/bridge_generated.h
 
