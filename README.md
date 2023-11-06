@@ -12,6 +12,7 @@ Primeramente necesitamos tener instaldo rust, en mi caso uso "cargo 1.73.0", pue
 Luego de ello puede clonar el proyecto y dirigirse al archivo native: 
 
 > cd native
+
 > cargo install flutter_rust_bridge_codegen@1.80.1
 
 Una vez allí  necesitar usar este comandos : 
