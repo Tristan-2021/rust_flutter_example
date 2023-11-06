@@ -34,7 +34,7 @@ Ya podrá correr el codigo
 ## Codigo Rust
 En nuestro caso el codigo de Rust lo que hace es generar y representar un fractal conocido como el "árbol de Barnsley" utilizando el sistema de funciones iteradas de Barnsley
 ## Notas
-Aunque aquì obviamos varios pasos importantes, lo que hacemos es una muestra rápido de como poder llamar còdigo Rust desde Flutter o viseversa. Si desea configuar su propio proyecto puede guiarse de este tutorial:
+Aunque aquì obviamos varios pasos importantes, lo que hacemos es una muestra rápido de como poder llamar còdigo Rust desde Flutter o viceversa. Si desea configuar su propio proyecto puede guiarse de este tutorial:
 - https://www.youtube.com/@drunisadev
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
