@@ -1,6 +1,7 @@
 # flutter_rust_example
 
 Calling Rust Code from Flutter: A Guide to FFI Integration
+![IMG_EB52EC3960F8-1](https://github.com/Tristan-2021/rust_flutter_example/assets/79274889/ca5b3b05-45b4-42ed-ae33-8cbeccff0a63)
 
 ## Getting Started
 
