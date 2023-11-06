@@ -7,22 +7,22 @@ Calling Rust Code from Flutter: A Guide to FFI Integration
 Primeramente necesitamos tener instaldo rust, en mi caso uso "cargo 1.73.0", puede usar este comando: 
 - flutter pub get
 - cargo --version
-Luego de ello puede clonar el proyecto y dirigirse al archivo native: 
+# Luego de ello puede clonar el proyecto y dirigirse al archivo native: 
 - cd native
 - cargo install flutter_rust_bridge_codegen@1.80.1
 
-Una vez allí  necesitar usar este comandos : 
+# Una vez allí  necesitar usar este comandos : 
 - cargo build
-Ahora necesitamos generar los puentes: 
+# Ahora necesitamos generar los puentes: 
 - flutter_rust_bridge_codegen -r src/api.rs -d ../lib/bridge_generated.dart --dart-decl-output ../lib/bridge_definitions.dart
-Corremos est comando desde la carpeta raiz
+# Corremos est comando desde la carpeta raiz
 - cargo install cargo-lipo
-Luego nos vamos otra vez a naitve  y corremos este comando
+# Luego nos vamos otra vez a a la carpeta naitve  y corremos este comando
 - cargo lipo
-Lo que hara este comando es instalar las arquitecturas para correr en neustros dipositovs IOS, ahora necesitamos copiar es arquitectura
-esto dentro de la carpeta nativa corremos el comando 
+# Lo que hara este comando es instalar las arquitecturas para correr en nuestros dipositovs IOS, ahora necesitamos copiar la arquitectura
+# dentro de la carpeta nativa corremos el comando 
 - cp target/universal/debug/librustflutter.a ../ios/Runner
-Otra vez necesitamos correr los encabezados
+# Otra vez necesitamos correr los encabezados
 - flutter_rust_bridge_codegen -r native/src/api.rs -d lib/bridge_generated.dart --dart-decl-output lib/bridge_definitions.dart -c ios/Runner/bridge_generated.h
 Ojo le saldra un error en el archivo: bridge_generated.dart
 ![Captura de pantalla 2023-11-06 a la(s) 01 45 02](https://github.com/Tristan-2021/rust_flutter_example/assets/79274889/23a1c67b-5628-43e4-9eaf-6bb58f4bd4c5)
