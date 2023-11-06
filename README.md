@@ -37,7 +37,7 @@ con este comando  : este es el nombre del proyecto: "libflutterrustexample"
 
 > cp target/universal/debug/libflutterrustexample.a ../ios/Runner
 
-Otra vez necesitamos correr los encabezados  : 
+Otra vez necesitamos correr los encabezados , lo llamamos desde la carpeta raìz: 
 
 > flutter_rust_bridge_codegen -r native/src/api.rs -d lib/bridge_generated.dart --dart-decl-output lib/bridge_definitions.dart -c ios/Runner/bridge_generated.h
 
