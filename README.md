@@ -5,12 +5,12 @@ Calling Rust Code from Flutter: A Guide to FFI Integration
 
 ## Empezemos 
 Primeramente necesitamos tener instaldo rust, en mi caso uso "cargo 1.73.0", puede usar este comando: 
->. flutter pub get
+>  flutter pub get
 
->. cargo --version
+>  cargo --version
 # Luego de ello puede clonar el proyecto y dirigirse al archivo native: 
-- cd native
-- cargo install flutter_rust_bridge_codegen@1.80.1
+> cd native
+> cargo install flutter_rust_bridge_codegen@1.80.1
 
 # Una vez allí  necesitar usar este comandos : 
 - cargo build
